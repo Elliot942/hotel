@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    user-select: none;
+}
+audio{
+    display: none;
+}
+header{
+    top: 0;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    padding:20px;
+    margin-top: -10px;
+}
+header img{
+    height: 80%;
+}
+header h1{
+    font-family: 'Montserrat-Thin';
+}
+header div{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 50px;
+}
+#navBar{
+    position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    top: 50%;
+    right: -128.312px;
+    z-index: 2147483647;
+    transition: 1.3s;
+}
+#navBarDiv{
+    margin-right: 0;
+    padding: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-flow: nowrap column;
+    z-index: 2147483647;
+}
+#navBarDiv{
+    margin-right: 0;
+    display: flex;
+    flex-flow: nowrap column;
+    z-index: 2147483647;
+    background-color: rgb(128, 233, 149);
+}
+#navBarDiv a{
+    padding: 4px;
+    text-decoration: none;
+    color:black;
+    font-family: 'Montserrat-Medium';
+    border: 1px none gray;
+    transition: 0.5s;
+}
+#navBarDiv a:hover{
+    border-radius: 20px;
+    background-color: rgb(98, 204, 119);
+}
+#navBarButton{
+    padding: 10px;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(128, 233, 149);
+    z-index: 2147483647;
+}
+#navBarButtonImg{
+    width: 20px;
+    transition:1s ;
+}
+#bg{
+    opacity: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -2147483647;
+}
+#welcome{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat-Light';
+    animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+#booking{
+    margin-top: 60px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    font-family: 'Montserrat-Light';
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#booking h2{
+    color: white;
+}
+#booking div{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+#booking div button{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    border-radius: 20px;
+    padding: 6px;
+    margin: 5px;
+}
+#booking input{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+#booking input:focus{
+    outline: none;
+}
+#booking button{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    border-radius: 20px;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+#booked{
+    margin-top: 60px;
+    margin-left: 25%;
+    margin-right: 25%;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    font-family: 'Montserrat-Light';
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+#booked h2{
+    color: white;
+}
+#booked div{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+#booked div button{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    border-radius: 20px;
+    padding: 6px;
+    margin: 5px;
+}
+#booked input{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+#booked input:focus{
+    outline: none;
+}
+#booked button{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    text-align: center;
+    border-radius: 20px;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+#booking{
+    display: visible;
+}
+#booked{
+    display: none;
+}
+.room{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.room img{
+    height: 200px;
+}
+.room div {
+    margin: 30px;
+}
+#reception{
+margin-left: 25%;
+    margin-right: 25%;
+}
+#reservationInfo{
+    color: white;
+}

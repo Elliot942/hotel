@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="icons/icon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"
+    />
+    <meta name="description" content="###" />
+    <meta name="keywords" content="###, ###" />
+    <title>HOME</title>
+  </head>
+  <body>
+    <audio controls autoplay>
+      <source src="audio/mountain.mp3" type="audio/mpeg" />
+    </audio>
+    <main>
+      <header>
+        <img src="img/logo.svg" alt="logo" />
+        <h1>CAMBIANOS HOTEL</h1>
+        <div id="logged">
+          <a id="loggedEmail"></a>
+        </div>
+      </header>
+      <section id="navBar">
+        <div id="navBarDiv">
+          <a href="rooms.html">Stanze</a>
+          <a href="foods.html">Ristorazione</a>
+          <a href="reception.html">Contatti</a>
+        </div>
+        <button id="navBarButton" onclick="showNavBar()">
+          <img id="navBarButtonImg" src="img/arrow.svg" alt="button" />
+        </button>
+      </section>
+      <img id="bg" src="img/bg.jpg" alt="bg" />
+      <section id="welcome">
+        <h2>Benvenuti</h2>
+        <h2>nel miglior hotel di sempre</h2>
+      </section>
+      <section id="booking">
+        <h2>LOGIN</h2>
+        <div>
+          <button>LOGIN</button>
+          <button>PRENOTA</button>
+        </div>
+        <input type="email" id="email" placeholder="Email" />
+        <input type="password" id="password" placeholder="Password" />
+        <div>
+          <input
+            type="number"
+            id="guests"
+            min="1"
+            max="5"
+            placeholder="Ospiti"
+          />
+          <input
+            type="number"
+            id="guestsSuite"
+            min="0"
+            max="5"
+            placeholder="Suite"
+          />
+          <input
+            type="number"
+            id="guestsStandard"
+            min="0"
+            max="5"
+            placeholder="Standard"
+          />
+        </div>
+        <button onclick="saveData()">PRENOTA</button>
+      </section>
+      <section id="booked">
+        <h2>PRENOTAZIONE</h2>
+        <p id="reservationInfo"></p>
+      </section>
+    </main>
+    <!--script-->
+    <script src="js/login.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/protection.js"></script>
+  </body>
+</html>
